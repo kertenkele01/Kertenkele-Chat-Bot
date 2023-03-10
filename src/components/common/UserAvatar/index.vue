@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
-import defaultAvatar from '@/assets/avatar.jpg'
+import defaultAvatar from 'https://cdn-icons-png.flaticon.com/512/147/147133.png'
 import { isString } from '@/utils/is'
 
 const userStore = useUserStore()
@@ -27,7 +27,7 @@ const userInfo = computed(() => userStore.userInfo)
     </div>
     <div class="ml-2">
       <h2 class="font-bold text-md">
-        {{ userInfo.name ?? 'ChenZhaoYu' }}
+        {{ userInfo.name ?? 'Chat Bot' }}
       </h2>
       <p class="text-xs text-gray-500">
         <span
